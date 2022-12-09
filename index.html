@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decision Making</title>
+    <style>
+      pre{
+        color: blue;
+      }
+    </style>
 </head>
 <body>
-    <H2>Q1. Calculator</H2>
+  <center><h1>Decision Making</h1></center>
+    <h3>Q1. Calculator</h3>
     <pre>
         const Calculator = (A, B, C) => 
         {
@@ -26,7 +32,7 @@
             }
         };
     </pre>
-    <h2>Q2. Check whether the condition is fulfilled or not.</h2>
+    <h3>Q2. Check whether the condition is fulfilled or not.</h3>
     <pre>
         const Check_divisibility = (N) => {
             if (N%6===0 && N%9===0)
@@ -40,7 +46,7 @@
         
         };
     </pre>
-    <h2>Q3. Eligible Voter.</h2>
+    <h3>Q3. Eligible Voter.</h3>
     <pre>
         const isEligible = (a) => {
             if(a >= 18){
@@ -52,7 +58,7 @@
             }
         };
     </pre>
-    <h2>Q4. Find Relation.</h2>
+    <h3>Q4. Find Relation.</h3>
     <pre> 
         const findRelation = (x,y) => {
             if(x < y){
@@ -66,7 +72,7 @@
             }
         }; 
     </pre>
-    <h2>Q5. Find Grades.</h2>
+    <h3>Q5. Find Grades.</h3>
     <pre>
         const findGrades = (a) => {
             if(a<=10){
@@ -86,7 +92,7 @@
             } 
         };
     </pre>
-    <h2>Q6. Get Value.</h2>
+    <h3>Q6. Get Value.</h3>
     <pre>
         const getValue = (a) => {
           
@@ -108,7 +114,7 @@
           }  
         };
     </pre>
-    <h2>Q7. Find the maximum out of three numbers.</h2>
+    <h3>Q7. Find the maximum out of three numbers.</h3>
     <pre>
         const Max_out_of_three = (A,B,C) => {
           
@@ -126,13 +132,13 @@
           }
         };    
     </pre>
-    <h2>Q8. Second Smallest.</h2>
+    <h3>Q8. Second Smallest.</h3>
     <pre>
         const findSndSmallest = (x,y,z) => {
-          if((x>y && x<z) || (x<y) && (x>z)){
+          if((x>y && x<z) || (x< y) && (x>z)){
             return (x);
           } 
-          else if((y>x && y<z) || (y<x && y>z)){
+          else if((y>x && y<z) || (y< x && y>z)){
             return (y);
           }
           else{
@@ -140,15 +146,15 @@
           }
         };    
     </pre>
-    <h2>Q9. Check whether the triangle is Acute or Obtuse.</h2>
+    <h3>Q9. Check whether the triangle is Acute or Obtuse.</h3>
     <pre>
         const Triangle_Check = (A,B,C) => {
           
           if (A>90 || B>90 || C>90){
             return ("obtuse");
           }
-          else if (A<90 || B<90 || C<90){
-            return ("acute");
+          else if (A< 90 || B< 90 || C< 90){
+            return (" acute " );
           }
         };   
     </pre>
